@@ -1,0 +1,140 @@
+{
+	"appInfo": {
+		"images": [{
+			"image": "10.45.80.1/public/nginx:1.11.11",
+			"imagePullPolicy": "A",
+			"shareMode": "T",
+			"imageId": 10037,
+			"imageName": "nginx",
+			"resource": {
+				"memory": 512,
+				"cpuLimit": 4.0,
+				"cpu": 0.1,
+				"memoryLimit": 4096
+			},
+			"entrypoint": "",
+			"readinessProbe": {
+				"failureThreshold": 1,
+				"timeoutSeconds": 1,
+				"periodSeconds": 10,
+				"successThreshold": 3,
+				"initialDelaySeconds": 30,
+				"commands": []
+			},
+			"ports": [{
+				"containerPort": 80,
+				"applicationImageId": 27999
+			}]
+		},{
+			"image": "10.45.80.1/public/nginx:1.11.11",
+			"imagePullPolicy": "A",
+			"shareMode": "T",
+			"imageId": 10037,
+			"imageName": "nginx",
+			"resource": {
+				"memory": 512,
+				"cpuLimit": 4.0,
+				"cpu": 0.1,
+				"memoryLimit": 4096
+			},
+			"entrypoint": "",
+			"readinessProbe": {
+				"failureThreshold": 1,
+				"timeoutSeconds": 1,
+				"periodSeconds": 10,
+				"successThreshold": 3,
+				"initialDelaySeconds": 30,
+				"commands": []
+			},
+			"ports": [{
+				"containerPort": 80,
+				"applicationImageId": 27999
+			}]
+		}],
+		"endpoints": ["ng222.zcm9.svc.ts.zsmart.com:80","ng222.zcm9.svc.ts.zsmart.com:80"],
+		"application": {
+			"serviceType": "H",
+			"autoUpdate": false,
+			"headLess": true,
+			"useLocalTZ": true,
+			"replicas": 1,
+			"probeEnabled": false,
+			"configChangedPolicy": "B",
+			"nodePort": false,
+			"createdDate": "2018-10-24 09:36:40",
+			"applicationVer": "1.0",
+			"publishType": "A",
+			"autoDeploy": false,
+			"tenantId": 1,
+			"zoneId": 9,
+			"zoneName": "default",
+			"state": "A",
+			"stateDate": "2018-10-24 09:36:40",
+			"applicationId": 10648,
+			"webRoot": "/a",
+			"projectId": 561923,
+			"applicationName": "ng222",
+			"stateful": false,
+			"status": "R"
+		},
+		"configFileManageInfo": {
+			"configFileMapping": [{
+				"fullPath": "/zcm/config/data/common/561923/zcamp/nginx.conf",
+				"groupName": "zcamp",
+				"fileName": "nginx.conf",
+				"mountPath": "/etc/nginx//nginx.conf",
+				"groupId": 5185,
+				"type": 1,
+				"fileConfigId": 20660
+			},{
+				"fullPath": "/zcm/config/data/common/561923/zcamp/nginx.conf",
+				"groupName": "zcamp",
+				"fileName": "nginx.conf",
+				"mountPath": "/etc/nginx//nginx.conf",
+				"groupId": 5185,
+				"type": 1,
+				"fileConfigId": 20660
+			}]
+		},
+		"volumes": [],
+		"loadBalancers": [{
+			"protocol": "HTTP",
+			"gatewayType": "NGINX",
+			"ip": "10.45.80.41",
+			"name": "ng222-gate",
+			"tenantId": 1,
+			"loadBalancerRuleList": [{
+				"loadBalancerId": "axJEv4zN2dzmJDkV",
+				"targetId": "10648",
+				"failTimeout": 0,
+				"prettyStrategy": "IP Hash",
+				"targetPort": 80,
+				"path": "/ng222",
+				"domain": "",
+				"name": "ng22",
+				"pathMode": "REGEX",
+				"id": "axJF50OSyuUYx9EE",
+				"maxFails": 0,
+				"webRoot": "/",
+				"strategy": "IP_HASH",
+				"prettyPathMode": "Regular expression",
+				"status": "ENABLED",
+				"createDate": 1540396800000
+			}],
+			"httpsState": "DISABLED",
+			"id": "axJEv4zN2dzmJDkV",
+			"listenPort": 9999,
+			"projectId": 561923,
+			"gatewayId": "2218",
+			"createDate": 1540396800000
+		}],
+		"services": [],
+		"status": "Running",
+		"attrs": [{
+			"attrId": 34755,
+			"attrValue": "lqb",
+			"attrName": "starter"
+		}]
+	},
+	"applicationName": "ng222"
+}

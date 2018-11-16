@@ -9,7 +9,9 @@
         <module name="eureka-client-1" />
         <module name="eureka-client-2" />
         <module name="eureka-server" />
+        <module name="hystrix-dashboard" />
         <module name="my-demo" />
+        <module name="ribbon-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,7 +20,9 @@
       <module name="eureka-client-2" target="1.8" />
       <module name="eureka-client-one" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="hystrix-dashboard" target="1.8" />
       <module name="my-demo" target="1.8" />
+      <module name="ribbon-consumer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
